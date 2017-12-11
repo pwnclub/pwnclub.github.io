@@ -1,18 +1,32 @@
+html
+{
+	background-color: #373737;
+}
+
 body 
 {
+	background-color: #F4F4F4;
     max-width: 700px;
     padding: 50px;
     margin: auto;
 }
 
-#main-name
+.info-text
 {
-	text-align: center;
+	font-family: 'Josefin Slab', serif;
+	font-size: 160%;
+	color: #373737;
+	border-radius: 25px;
+	padding: 1px 10px;
+	margin: 30px;
+	background-color: #DCD0C0;
 }
 
-#main-school
+#main-name, #main-school
 {
 	text-align: center;
+	font-family: 'Poiret One', cursive;
+	color: #C08283;
 }
 
 .icons

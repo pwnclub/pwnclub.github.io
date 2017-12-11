@@ -1,4 +1,22 @@
+html
+{
+	display: table;
+	margin: auto;
+}
+
 body
 {
-	width: 50%
+	max-width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#main-name
+{
+	text-align: center;
+}
+
+#main-school
+{
+	text-align: center;
 }

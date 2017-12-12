@@ -44,7 +44,6 @@ body
 	font-weight: bold;
 	font-size: 1.3em;
 	color: #373737;
-	padding-left:5em
 }
 
 .label-left
@@ -53,7 +52,8 @@ body
 	font-weight: bold;
 	font-size: 1.3em;
 	color: #373737;
-	padding-right:5em
+	width: 100%;
+	float: left;
 }
 
 #main-name, #main-school, h1
@@ -112,4 +112,11 @@ body
 ul
 {
 	list-style-position: inside;
+	font-family: 'Josefin Slab', serif;
+	font-size: 2em;
+}
+
+li
+{
+	margin: 0 0 7px 0;
 }

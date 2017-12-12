@@ -6,23 +6,57 @@ html
 body 
 {
 	background-color: #F4F4F4;
-    max-width: 700px;
+    max-width: 1000px;
     padding: 50px;
     margin: auto;
 }
 
-.info-text
+.dark-on-light-text
 {
 	font-family: 'Josefin Slab', serif;
 	font-size: 160%;
 	color: #373737;
 	border-radius: 25px;
-	padding: 1px 10px;
+	padding: 10px;
 	margin: 30px;
 	background-color: #DCD0C0;
+	border: 1px solid;
+    box-shadow: 1px 2px 2px 2px #888888;
 }
 
-#main-name, #main-school
+.light-on-dark-text
+{
+	font-family: 'Josefin Slab', serif;
+	font-size: 160%;
+	color: #DCD0C0;
+	border-radius: 25px;
+	padding: 10px;
+	margin: 30px;
+	background-color: #373737;
+	border: 1px solid;
+    box-shadow: 1px 2px 2px 2px #888888;
+}
+
+
+.label-right
+{
+	font-family: 'Josefin Slab', serif;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #373737;
+	padding-left:5em
+}
+
+.label-left
+{
+	font-family: 'Josefin Slab', serif;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #373737;
+	padding-right:5em
+}
+
+#main-name, #main-school, h1
 {
 	text-align: center;
 	font-family: 'Poiret One', cursive;
@@ -49,6 +83,8 @@ body
 	width: 20%;
 	padding: 5px;
 	float: left;
+	border: 1px solid;
+    box-shadow: 1px 2px 2px 2px #888888;
 }
 
 #icons-right img
@@ -56,9 +92,24 @@ body
 	width: 20%;
 	padding: 5px;
 	float: right;
+	border: 1px solid;
+    box-shadow: 1px 2px 2px 2px #888888;
 }
 
 #profile-icon img
 {
 	width: 80%;
+}
+
+.sexy_line 
+{ 
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #373737));
+}
+
+ul
+{
+	list-style-position: inside;
 }

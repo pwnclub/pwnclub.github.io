@@ -46,6 +46,13 @@ body
 	color: #373737;
 }
 
+.light-link
+{
+	color: #F4F4F4;
+	border-bottom: 1px dotted #F4F4F4;
+    text-decoration: none;
+}
+
 .label-left
 {
 	font-family: 'Josefin Slab', serif;

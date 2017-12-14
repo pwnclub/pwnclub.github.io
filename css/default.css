@@ -24,7 +24,7 @@ body
     box-shadow: 1px 2px 2px 2px #888888;
 }
 
-.light-on-dark-text
+.light-on-dark-text, .accordion
 {
 	font-family: 'Josefin Slab', serif;
 	font-size: 160%;
@@ -128,7 +128,7 @@ body
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #373737));
 }
 
-ul
+.project-list
 {
 	list-style-position: inside;
 	font-family: 'Josefin Slab', serif;
@@ -138,4 +138,75 @@ ul
 li
 {
 	margin: 0 0 20px 0;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin: auto;
+    width: 30%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";	
+}
+
+.top-list {
+
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Josefin Slab', serif;
+    color: #DCD0C0;
+    border-radius: 25px;
+    background-color: #373737;
+    margin: 30px;
+    width: 60%;
+    font-size: 160%;
+    transition: max-height 0.2s ease-out;
+}
+
+.test{
+	padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    font-family: 'Josefin Slab', serif;
+	font-size: 160%;
+	color: #DCD0C0;
+	border-radius: 25px;
+	margin: 30px;
+	background-color: #373737;
+	border: 1px solid;
+    box-shadow: 1px 2px 2px 2px #888888;
+}
+
+.heart
+{
+	color: #f441be;
+}
+
+.end-message
+{
+	font-family: 'Josefin Slab', serif;
 }

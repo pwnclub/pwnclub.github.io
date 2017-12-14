@@ -53,6 +53,13 @@ body
     text-decoration: none;
 }
 
+.dark-link
+{
+	color: #aaa194;
+	border-bottom: 1px dotted #aaa194;
+    text-decoration: none;
+}
+
 .label-left
 {
 	font-family: 'Josefin Slab', serif;
@@ -125,5 +132,5 @@ ul
 
 li
 {
-	margin: 0 0 7px 0;
+	margin: 0 0 20px 0;
 }

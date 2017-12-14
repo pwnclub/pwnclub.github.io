@@ -83,6 +83,11 @@ body
 	white-space: nowrap;
 }
 
+.project-title
+{
+	border-bottom: 3px double;
+}
+
 #icons-left, #profile-icon, #icons-right
 {
 	display: inline-block;

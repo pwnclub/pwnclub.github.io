@@ -10,9 +10,10 @@
 
 	  gtag('config', 'UA-111268945-1');
 	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<meta charset="UTF-8">
 	<meta name="description" content="Alexander Egorov Personal Web Site">
-	<meta name="keywords" content="Alexander,Alex,Alexandr,Egorov,Alexander Egorov,Waterloo,Ancaster,Hamilton,Intern,C++,Python,Algorithms,Co-op">
+	<meta name="keywords" content="Alexander,Alex,Egorov,Alexander Egorov,Waterloo,Ancaster,Hamilton,Intern,C++,Python,Algorithms,Co-op">
 	<meta name="viewport" content="width=1000">
 	<meta name="author" content="Alexander Egorov">
 	<link type="text/css" rel="stylesheet" href="css/default.css"/>
@@ -130,8 +131,8 @@
 	<br>
 
 	<center>
-	<button class="accordion"><i class="em em-books"></i> Top 10 Favorite Books </button>
-	<div class="top-list">
+	<button class="accordion" id="b1"><i class="em em-books"></i> Top 10 Favorite Books </button>
+	<div class="top-list" id="tl1">
 		<ul>
 			<li>And Then There Were None - Agatha Christie</li>
 			<li>The Count of Monte Cristo - Alexandre Dumas</li>
@@ -146,8 +147,10 @@
 		</ul>
 	</div>
 
-	<button class="accordion"><i class="em em-musical_note"></i> Top 10 Favorite Albums</button>
-	<div class="top-list">
+	<br><br>
+
+	<button class="accordion" id="b2"><i class="em em-musical_note"></i> Top 10 Favorite Albums</button>
+	<div class="top-list" id="tl2">
 		<ul>
 			<li>Random Access Memories - Daft Punk</li>
 			<li>Select Ambient Works 86-92 - Aphex Twin</li>
@@ -162,8 +165,9 @@
 		</ul>
 	</div>
 
-	<button class="accordion"><i class="em em-movie_camera"></i> Top 10 Favorite Films</button>
-	<div class="top-list">
+	<br><br>
+	<button class="accordion" id="b3"><i class="em em-movie_camera"></i> Top 10 Favorite Films</button>
+	<div class="top-list" id="tl3">
 		<ul>
 			<li>The Lord of the Rings (Trilogy) - Peter Jackson</li>
 			<li>Memento - Christopher Nolan</li>
@@ -178,31 +182,26 @@
 		</ul>
 	</div>
 
+	<br><br><br>
+
 	<span class="end-message">Made with <span class="heart">❤</span> at the University of Waterloo</span>
 
 	</center>
 
 	<script>
-	var acc = document.getElementsByClassName("accordion");
-	var list = document.getElementsByClassName("top-list");
-
-	for (var i = 0; i < acc.length; i++) 
-	{
-	  acc[i].addEventListener("click", function() 
-	  {
-	    this.classList.toggle("active");
-	    var panel = this.nextElementSibling;
-	    panel.classList.toggle("test");
-	    if (panel.style.maxHeight)
-	    {
-	      panel.style.maxHeight = null;
-	    } 
-	    else 
-	    {
-	      panel.style.maxHeight = panel.scrollHeight + "px";
-	    } 
-	  });
-	}
+	$(document).ready(function(){
+	    $("button").click(function(){
+	    	if($(this).attr("id") == "b1"){
+	    		$("#tl1").slideToggle();
+	    	}
+	        else if($(this).attr("id") == "b2"){
+	        	$("#tl2").slideToggle();
+	        }
+	        else if($(this).attr("id") == "b3"){
+	        	$("#tl3").slideToggle();
+	        }
+	    });
+	});
 	</script>
 </body>
 </html>

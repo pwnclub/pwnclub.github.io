@@ -1,0 +1,7 @@
+{% assign url = page.url|remove:'index.html' %}
+<div class="navbar">
+    {% for link in site.navigation %}
+    <a href="{{link.url}}" {% if url == link.url %}class="navbar-item active"{% endif %} class="navbar-item" >{{link.text}}</a>
+    {% endfor %}
+    <a href="docs/resume.pdf" class="navbar-item" target="_blank">Resume</a>
+</div>

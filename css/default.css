@@ -1,180 +1,192 @@
-html
-{
-	background-color: #373737;
+body {
+    margin: 0;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 1.3rem;
 }
 
-body 
-{
-	background-color: #F4F4F4;
-    max-width: 1000px;
-    padding: 50px;
-    margin: auto;
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "welcome blog-preview"
+        "projects projects";
 }
 
-.dark-on-light-text
-{
-	font-family: 'Josefin Slab', serif;
-	font-size: 160%;
-	color: #373737;
-	border-radius: 25px;
-	padding: 10px;
-	margin: 30px;
-	background-color: #DCD0C0;
-	border: 1px solid;
-    box-shadow: 1px 2px 2px 2px #888888;
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(20, 20, 20, 0.8);
+    grid-area: navbar;
 }
 
-.light-on-dark-text, .accordion
-{
-	font-family: 'Josefin Slab', serif;
-	font-size: 160%;
-	color: #DCD0C0;
-	border-radius: 25px;
-	padding: 10px;
-	margin: 30px;
-	background-color: #373737;
-	border: 1px solid;
-    box-shadow: 1px 2px 2px 2px #888888;
-}
-
-
-.label-right
-{
-	font-family: 'Josefin Slab', serif;
-	font-weight: bold;
-	font-size: 1.3em;
-	color: #373737;
-}
-
-.light-link
-{
-	color: #F4F4F4;
-	border-bottom: 1px dotted #F4F4F4;
-    text-decoration: none;
-}
-
-.dark-link
-{
-	color: #aaa194;
-	border-bottom: 1px dotted #aaa194;
-    text-decoration: none;
-}
-
-.label-left
-{
-	font-family: 'Josefin Slab', serif;
-	font-weight: bold;
-	font-size: 1.3em;
-	color: #373737;
-	width: 100%;
-}
-
-#main-name, #main-school, h1
-{
-	text-align: center;
-	font-family: 'Poiret One', cursive;
-	color: #C0B283;
-}
-
-.icons
-{
-	display: inline-block;
-	white-space: nowrap;
-}
-
-.project-title
-{
-	border-bottom: 3px double;
-}
-
-#icons-left, #profile-icon, #icons-right
-{
-	display: inline-block;
-    white-space: nowrap;
+.navbar-item {
+    flex: 1;
     text-align: center;
-    vertical-align: middle;
-    width: 33%;
+    padding: 1.5rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255);
 }
 
-#profile-icon img
-{
-	width: 80%;
+.navbar-item:hover {
+    background-color: rgba(20, 20, 20, 0.1);
 }
 
-.cool_line 
-{ 
-    margin: 25px 0;
-    height: 1px;
-    background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #373737));
+.active,
+.active:hover {
+    background-color: gray;
 }
 
-.project-list
-{
-	list-style-position: inside;
-	font-family: 'Josefin Slab', serif;
-	font-size: 2em;
+.welcome {
+    grid-area: welcome;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-li
-{
-	margin: 0 0 20px 0;
+.welcome-header,
+.blog-preview-header,
+.projects-header {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    margin: 4rem 0 1rem 0;
+
+    border-top: 1px solid rgb(235, 235, 224);
+    border-bottom: 1px solid rgb(235, 235, 224);
 }
 
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    margin: auto;
-    width: 50%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    font-size: 200%;
+.blog-preview {
+    grid-area: blog-preview;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-.active, .accordion:hover {
-    background-color: #ccc;
+.blog-preview-title {
+    text-decoration: none;
 }
 
-.top-list {
-
-    padding: 0 18px;
-    overflow: hidden;
-    font-family: 'Josefin Slab', serif;
-    color: #DCD0C0;
-    border-radius: 25px;
-    background-color: #373737;
-    margin: 30px;
-    width: 60%;
-    font-size: 160%;
-    display: none;
+.my-name {
+    font-weight: 700;
 }
 
-.heart
-{
-	color: #f441be;
+.projects {
+    grid-area: projects;
+    padding: 0 2rem;
 }
 
-.end-message
-{
-	font-family: 'Josefin Slab', serif;
+.projects-body {
+    display: flex;
 }
 
-.icon-centered {
+.project {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(235, 235, 224);
+    margin: 0 2%;
+}
+
+.project a {
+    width: 100%;
+    height: auto;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project-name {
+    font-weight: 700;
+    padding: 1rem 0.5rem;
+}
+
+.project-description {
+    font-style: italic;
+    padding: 0 0.5rem 1rem 0.5rem;
+}
+
+@media only screen and (max-width: 750px) {
+    .projects-body {
+        flex-direction: column;
+    }
+
+    .project {
+        margin: 2rem 2rem;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "navbar"
+            "welcome"
+            "blog-preview"
+            "projects";
+    }
+}
+
+.posts {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.post-title {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.post-image {
+    padding: 2rem 0;
+}
+
+.post-read-more {
+    text-decoration: none;
+}
+
+.post-page {
+    padding: 4rem 4rem 0 4rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+}
+
+.blog-strong {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.blog-album-line {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    border-left: 3px solid rgb(235, 235, 224);
+}
+
+.blog-album-track {
+    width: 500px;
     height: 80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    margin: 1rem auto 4rem auto;
 }
 
-.icon-centered img {
-    padding: 5px;
-    height: 60px;
-    width: 60px;
-    box-shadow: 1px 2px 2px 2px #888888;
-    border: 1px solid;
+.blog-album-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.blog-album-cover {
+    display: flex;
+    margin: 0 auto;
+    width: 250px;
 }

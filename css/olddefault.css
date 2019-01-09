@@ -1,0 +1,180 @@
+html
+{
+	background-color: #373737;
+}
+
+body 
+{
+	background-color: #F4F4F4;
+    max-width: 1000px;
+    padding: 50px;
+    margin: auto;
+}
+
+.dark-on-light-text
+{
+	font-family: 'Josefin Slab', serif;
+	font-size: 160%;
+	color: #373737;
+	border-radius: 25px;
+	padding: 10px;
+	margin: 30px;
+	background-color: #DCD0C0;
+	border: 1px solid;
+    box-shadow: 1px 2px 2px 2px #888888;
+}
+
+.light-on-dark-text, .accordion
+{
+	font-family: 'Josefin Slab', serif;
+	font-size: 160%;
+	color: #DCD0C0;
+	border-radius: 25px;
+	padding: 10px;
+	margin: 30px;
+	background-color: #373737;
+	border: 1px solid;
+    box-shadow: 1px 2px 2px 2px #888888;
+}
+
+
+.label-right
+{
+	font-family: 'Josefin Slab', serif;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #373737;
+}
+
+.light-link
+{
+	color: #F4F4F4;
+	border-bottom: 1px dotted #F4F4F4;
+    text-decoration: none;
+}
+
+.dark-link
+{
+	color: #aaa194;
+	border-bottom: 1px dotted #aaa194;
+    text-decoration: none;
+}
+
+.label-left
+{
+	font-family: 'Josefin Slab', serif;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #373737;
+	width: 100%;
+}
+
+#main-name, #main-school, h1
+{
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+	color: #C0B283;
+}
+
+.icons
+{
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.project-title
+{
+	border-bottom: 3px double;
+}
+
+#icons-left, #profile-icon, #icons-right
+{
+	display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    width: 33%;
+}
+
+#profile-icon img
+{
+	width: 80%;
+}
+
+.cool_line 
+{ 
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #373737));
+}
+
+.project-list
+{
+	list-style-position: inside;
+	font-family: 'Josefin Slab', serif;
+	font-size: 2em;
+}
+
+li
+{
+	margin: 0 0 20px 0;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin: auto;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-size: 200%;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.top-list {
+
+    padding: 0 18px;
+    overflow: hidden;
+    font-family: 'Josefin Slab', serif;
+    color: #DCD0C0;
+    border-radius: 25px;
+    background-color: #373737;
+    margin: 30px;
+    width: 60%;
+    font-size: 160%;
+    display: none;
+}
+
+.heart
+{
+	color: #f441be;
+}
+
+.end-message
+{
+	font-family: 'Josefin Slab', serif;
+}
+
+.icon-centered {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-centered img {
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 1px 2px 2px 2px #888888;
+    border: 1px solid;
+}

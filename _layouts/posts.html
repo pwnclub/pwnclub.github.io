@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{{ content }}
+<div class="posts">
+    {% for post in site.posts %}
+        <div class="post">
+            <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <img class="post-image" src="{{ post.image }}" width="350"/>
+            {{ post.excerpt }}
+
+            <a class="post-read-more" href="{{ post.url }}">Read more...</a>
+        </div>
+    {% endfor %}  
+</div>

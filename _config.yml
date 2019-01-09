@@ -1,5 +1,6 @@
 name: My Jekyll Website
 title: Alexander Egorov
+url: "http://alexanderegorov.com"
 navigation:
 - text: Home
   url: /

@@ -5,11 +5,8 @@ body {
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-        "welcome blog-preview"
-        "projects projects";
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -49,10 +46,14 @@ body {
     font-size: 1.7rem;
     font-weight: 700;
     padding: 1rem 0;
-    margin: 4rem 0 1rem 0;
+    margin: 4rem 2rem 1rem 2rem;
 
     border-top: 1px solid rgb(235, 235, 224);
     border-bottom: 1px solid rgb(235, 235, 224);
+}
+
+.welcome-body {
+  margin: 0 2rem;
 }
 
 .blog-preview {

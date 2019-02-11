@@ -11,17 +11,6 @@ layout: default
             {{ content }}
         </div>
     </div>
-    <div class="blog-preview">
-        <div class="blog-preview-header">
-            Latest Blog Post
-        </div>
-        <div class="blog-preview-body">
-            {% for post in site.posts limit:1 %}
-            <p>{{ post.excerpt | strip_html }}</p>
-            <a class="blog-preview-title" href="{{ post.url }}">Continue reading: '{{ post.title }}'...</a>
-            {% endfor %}
-        </div>
-    </div>
     <div class = "projects">
         <div class="projects-header">
             Selected Projects
